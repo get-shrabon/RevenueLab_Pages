@@ -19,9 +19,11 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md bg-body-white py-3">
+      <nav class="navbar navbar-expand-md bg-body-white">
         <div class="container">
-          <a class="navbar-brand" href="#">RevenueLab</a>
+          <a class="navbar-brand" href="#"
+            ><img src="Images/logo.svg" alt=""
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -31,7 +33,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span><i class="fa-solid fa-bars"></i></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
@@ -47,12 +49,12 @@
                 <a class="nav-link text-black" href="#">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-primary rounded-pill" href="#">Book a Demo</a>
+                <a class="primary_btn py-2 rounded-pill" href="#"
+                  >Book a Demo</a
+                >
               </li>
               <li class="nav-item">
-                <a class="btn btn-outline-primary rounded-pill" href="#"
-                  >Sign In</a
-                >
+                <a class="secondary_btn py-2 rounded-pill" href="#">Sign In</a>
               </li>
             </ul>
           </div>
@@ -69,18 +71,16 @@
             Optimized Tool
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quas,
-            <br />
-            non ipsa fugit qui ex incidunt quos saepe minus sapiente?
+            Ut sagittis hendrerit sem ac dapibus. Proin congue lorem <br> quam,rutrum lectus tristique eget  eleifend tellusviverra.
           </p>
           <div class="d-flex align-items-center justify-content-center gap-3">
             <input
               type="email"
               name=""
               id="email"
-              placeholder="Your Email..."
+              placeholder="Your Work Email"
             />
-            <a href="#" class="btn-primary btn p-2">Book A Button</a>
+            <a href="#" class="primary_btn">Book a Demo</a>
           </div>
         </div>
       </section>
@@ -88,7 +88,10 @@
 
       <!-- Solution Section Start -->
       <section class="solution_container">
-        <div class="bg_shape"></div>
+        <div class="solution_container_bg_2"></div>
+        <div class="solution_container_bg_3"></div>
+        <div class="solution_container_bg_4"></div>
+        <div class="solution_container_bg_5"></div>
         <div class="solution_content mt-5 container">
           <div>
             <h2 class="text-white fs-1 fw-bold">
@@ -107,24 +110,28 @@
           >
             <img src="Images/solution 1.svg" alt="" width="350px" />
             <div class="solution_box">
-              <h3>All <span class="text_second">Around AI</span></h3>
+              <div>
+                <h3>All <span class="text_second">Around AI</span></h3>
+                <div class="divider"></div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                esse totam, quasi enim ullam rerum nihil veritatis.
+                Ut sagittis hendrerit sem ac dapibus. Proin congue lorem quam, quis rutrum lectus tristique eget. Aliquam eleifend ex at tellus iaculis viverra.
               </p>
-              <a class="btn btn-primary" href="#">Solution BTN</a>
+              <a class="primary_btn" href="#">View more <span><i class="fa-solid fa-angle-right"></i></span></a>
+              </div>
             </div>
           </div>
           <div
             class="d-flex justify-content-between align-items-center solution_item"
           >
             <div class="solution_box">
-              <h3>Data <span class="text_second">Process</span></h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                esse totam, quasi enim ullam rerum nihil veritatis.
-              </p>
-              <a class="btn btn-primary" href="#">Solution BTN</a>
+           <div>
+            <h3>Data <span class="text_second">Process</span></h3>
+            <div class="divider"></div>
+            <p>
+              Ut sagittis hendrerit sem ac dapibus. Proin congue lorem quam, quis rutrum lectus tristique eget. Aliquam eleifend ex at tellus iaculis viverra.
+            </p>
+            <a class="primary_btn" href="#">View more <span><i class="fa-solid fa-angle-right"></i></span></a>
+           </div>
             </div>
             <img src="Images/solution 2.svg" alt="" width="350px" />
           </div>
@@ -133,24 +140,26 @@
           >
             <img class="z-2" src="Images/solution 3.svg" alt="" width="350px" />
             <div class="solution_box">
-              <h3>The <span class="text_second">Execution</span></h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                esse totam, quasi enim ullam rerum nihil veritatis.
-              </p>
-              <a class="btn btn-primary" href="#">Solution BTN</a>
+           <div>
+            <h3>The <span class="text_second">Execution</span></h3>
+            <div class="divider"></div>
+            <p>
+              Ut sagittis hendrerit sem ac dapibus. Proin congue lorem quam, quis rutrum lectus tristique eget. Aliquam eleifend ex at tellus iaculis viverra.
+            </p>
+            <a class="primary_btn" href="#">View more <span><i class="fa-solid fa-angle-right"></i></span></a>
+           </div>
             </div>
           </div>
         </div>
         <img class="ring_one" src="Images/ring 1.svg" alt="" />
         <img class="ring_two" src="Images/ring 2.svg" alt="" />
         <img class="ring_three" src="Images/shape 3.svg" alt="" />
+        <img class="bottom_layer" src="Images/layer.png" alt="">
       </section>
       <!-- Solution Section End -->
 
       <!-- Clients Section Start -->
       <section class="client_container">
-        <div class="bg_shape_two"></div>
         <div class="client_content container">
           <h2 class="text-black fs-1 fw-bold text-center">
             You're In <span class="text_second">Good Comphany</span>
@@ -369,18 +378,18 @@
     <!-- Custom JS -->
     <script>
       // Client Section Slider
-var swiper = new Swiper(".client", {
-    loop:true,
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-  });
-// Client Section Slider
+      var swiper = new Swiper(".client", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      // Client Section Slider
     </script>
   </body>
 </html>
